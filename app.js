@@ -20,9 +20,9 @@ app.get('/', (req, res)=> {
     });
 });
 
-app.use('contact', contactRouter);
+app.use('/contact', contactRouter);
 
 
 app.listen(port, ()=> {
     console.log(`running on http://localhost:${port}`)
-})
+});

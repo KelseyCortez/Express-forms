@@ -9,6 +9,7 @@ router.get('/', (req, res)=> {
 });
 
 router.post('/', (req, res)=> {
+    console.log(req.body);
     res.render('contact', {
         title: 'Thanks for posting!',
         submitted: true,
